@@ -1,8 +1,15 @@
+@import url('./fonts.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
+  @apply font-Roboto bg-white;
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: 50px 80px repeat(5, minmax(150px, auto)) 20px;
+  justify-items: flex-start;
+  padding: 0 20px 0 20px;
 }

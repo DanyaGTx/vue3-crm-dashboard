@@ -1,5 +1,7 @@
 import './assets/style.css';
+import { VueQueryPlugin } from '@tanstack/vue-query';
 import { createApp } from 'vue';
 import App from './App.vue';
+import router from './router/router';
 
-createApp(App).mount('#app');
+createApp(App).use(VueQueryPlugin).use(router).mount('#app');

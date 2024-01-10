@@ -1,7 +1,9 @@
 <template>
   <div class="flex">
     <SideBar />
-    <div class="px-10 py-6 w-full">Dashboard</div>
+    <div class="px-10 py-6 w-full overflow-auto">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
